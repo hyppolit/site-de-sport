@@ -1,0 +1,117 @@
+/* Reset de base */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Fond et texte */
+html, body {
+    height: 100%;
+    width: 100%;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to bottom, #0f172a, #1e293b);
+    color: white;
+    position: relative; /* nécessaire pour les boutons absolus */
+}
+
+/* Boutons en haut à droite */
+body > button:first-of-type {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+body > button:last-of-type {
+    position: absolute;
+    top: 20px;
+    right: 140px; /* ajuste selon la largeur du premier bouton */
+}
+
+body > button {
+    background-color: #06b6d4;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+body > button:hover {
+    background-color: #0891b2;
+}
+
+/* Conteneur centré pour le texte */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    padding: 0 20px; /* pour éviter le texte collé sur les bords */
+}
+
+/* Styles des titres et paragraphes */
+h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    color: #06b6d4;
+}
+
+h2 {
+    font-size: 2rem;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    color: #06b6d4;
+}
+
+p {
+    font-size: 1.2rem;
+    margin-bottom: 1.5rem;
+    line-height: 1.6;
+    max-width: 700px; /* pour une lecture agréable */
+}
+
+/* Formulaire */
+form {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 40px;
+    border-radius: 15px;
+    width: 100%;
+    max-width: 500px; /* largeur max */
+    margin: 30px auto; /* centrer le formulaire */
+    box-shadow: 0 0 20px rgba(0,0,0,0.3);
+}
+
+/* Champs du formulaire */
+form input {
+    display: block;
+    width: 100%;
+    padding: 20px;       /* plus grand que avant */
+    font-size: 1.5rem;   /* texte plus gros */
+    margin-bottom: 25px; /* espace entre les champs */
+    border: none;
+    border-radius: 12px;
+    outline: none;
+}
+
+/* Bouton du formulaire */
+form button {
+    background-color: #06b6d4;
+    color: white;
+    border: none;
+    padding: 20px;
+    width: 100%;
+    font-size: 1.5rem;
+    font-weight: bold;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+form button:hover {
+    background-color: #0891b2;
+}
+
