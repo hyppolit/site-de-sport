@@ -1,13 +1,13 @@
 <?php
 session_start();
 
-// Vérifier si l'utilisateur est connecté
+
 if (!isset($_SESSION['id'])) {
     header("Location: main.html");
     exit;
 }
 
-// Exemple de produits (pour afficher les commandes)
+
 $produits = [
     1 => ['nom' => 'T-shirt GymFlow', 'prix' => 25, 'image' => 'images/tshirt.jpg'],
     2 => ['nom' => 'Short de sport', 'prix' => 30, 'image' => 'images/short.jpg'],
@@ -17,7 +17,7 @@ $produits = [
     6 => ['nom' => 'Gants de muscu', 'prix' => 12, 'image' => 'images/gants.jpg'],
 ];
 
-// Récupérer les commandes du panier
+
 $panier = $_SESSION['panier'] ?? [];
 $total = 0;
 ?>
@@ -66,3 +66,4 @@ $total = 0;
 
 </body>
 </html>
+
