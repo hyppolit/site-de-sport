@@ -1,7 +1,7 @@
 <?php
 session_start();
 
-// Liste de produits (même que sur produits.php)
+
 $produits = [
     1 => ['nom' => 'T-shirt GymFlow', 'prix' => 25, 'image' => 'images/tshirt.jpg'],
     2 => ['nom' => 'Short de sport', 'prix' => 30, 'image' => 'images/short.jpg'],
@@ -53,5 +53,6 @@ $total = 0;
 <a href="produits.php">Retour aux produits</a>
 </body>
 </html>
+
 
 
