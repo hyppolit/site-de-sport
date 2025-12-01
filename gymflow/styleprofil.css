@@ -1,7 +1,7 @@
-/* Reset simple */
+
 * { margin:0; padding:0; box-sizing:border-box; font-family:Arial,sans-serif; }
 
-/* Corps de page */
+
 body {
     background: linear-gradient(to bottom, #0f172a, #1e293b);
     color:white;
@@ -9,7 +9,7 @@ body {
     padding:30px;
 }
 
-/* Boutons en haut à droite */
+
 .header-buttons {
     display:flex;
     justify-content:flex-end;
@@ -17,9 +17,9 @@ body {
     margin-bottom:30px;
 }
 .logout-btn {
-    display: block;              /* permet le centrage avec margin auto */
-    margin: 20px auto;           /* centre horizontalement et ajoute un peu d'espace vertical */
-    background-color: #06b6d4;   /* bleu comme le reste du site */
+    display: block;              
+    margin: 20px auto;           
+    background-color: #06b6d4;   
     color: white;
     border: none;
     padding: 12px 25px;
@@ -32,7 +32,7 @@ body {
 }
 
 .logout-btn:hover {
-    background-color: #0891b2;   /* bleu foncé au survol */
+    background-color: #0891b2;  
     transform: scale(1.05);
 }
 .header-buttons button {
@@ -47,13 +47,14 @@ body {
 
 .header-buttons button:hover { background-color:#0891b2; }
 
-/* Titres */
+
 h1, h2 { color:#06b6d4; text-align:center; margin-bottom:20px; }
 h2 { margin-top:30px; }
 
-/* Texte lorsqu'il n'y a pas de commande */
+
 .aucune-commande {
     text-align:center;
     color:#888;
     f
+
 }
