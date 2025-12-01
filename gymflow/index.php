@@ -1,14 +1,14 @@
 <?php
 session_start();
 
-// Exemple de produits
+
 $produits = [
     1 => ['nom' => 'Haltères 10kg', 'prix' => 30, 'image' => 'images/halteres.jpg'],
     2 => ['nom' => 'Tapis de sport', 'prix' => 15, 'image' => 'images/tapis.jpg'],
     3 => ['nom' => 'Gants de muscu', 'prix' => 12, 'image' => 'images/gants.jpg'],
 ];
 
-// Initialiser le panier si nécessaire
+
 if (!isset($_SESSION["panier"])) {
     $_SESSION["panier"] = [];
 }
@@ -18,7 +18,7 @@ if (!isset($_SESSION["panier"])) {
 <head>
 <meta charset="UTF-8">
 <title>Produits GymFlow</title>
-<link rel="stylesheet" href="style.css"> <!-- ton CSS -->
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
 
@@ -42,4 +42,5 @@ if (!isset($_SESSION["panier"])) {
 
 </body>
 </html>
+
 
