@@ -1,7 +1,7 @@
 <?php
 session_start();
 
-// Exemple de produits (tu peux récupérer depuis ta base de données)
+
 $produits = [
     1 => ['nom' => 'T-shirt GymFlow', 'prix' => 25, 'image' => 'images/tshirt.jpg'],
     2 => ['nom' => 'Short de sport', 'prix' => 30, 'image' => 'images/short.jpg'],
@@ -11,7 +11,7 @@ $produits = [
     6 => ['nom' => 'Gants de muscu', 'prix' => 12, 'image' => 'images/gants.jpg'],
 ];
 
-// Initialiser le panier si nécessaire
+
 if (!isset($_SESSION["panier"])) {
     $_SESSION["panier"] = [];
 }
@@ -25,7 +25,7 @@ if (!isset($_SESSION["panier"])) {
 </head>
 <body>
 
-<!-- Boutons en haut à droite -->
+
 <div class="header-buttons">
     <?php if(isset($_SESSION['id'])): ?>
         <button onclick="window.location.href='profil.php'">Profil</button>
@@ -53,4 +53,5 @@ if (!isset($_SESSION["panier"])) {
 
 </body>
 </html>
+
 
